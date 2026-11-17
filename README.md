@@ -11,6 +11,22 @@ A simple campus FAQ virtual assistant built for AIP203 (Artificial Intelligence 
 
 ---
 
+## Installation
+
+Install all dependencies with:
+```bash
+pip install -r requirements.txt
+```
+
+**Dependencies:**
+| Package | Purpose |
+|---|---|
+| `streamlit` | Web-based chat interface |
+| `google-genai` | Google Gemini API for open-ended questions |
+| `python-dotenv` | Loads `.env` file for the API key |
+
+The core algorithm (Naive Bayes classifier) uses only Python's standard library — no extra installs needed for the CLI mode.
+
 ## How to Run
 
 ### 1. Run the Web Interface (Streamlit)
