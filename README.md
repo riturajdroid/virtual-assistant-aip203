@@ -1,6 +1,10 @@
-# Campus Virtual Assistant
+# 🎓 CampusMate - Automated Campus Helpdesk Assistant
 
-A simple campus FAQ virtual assistant built for AIP203 (Artificial Intelligence Lab). It uses a Multinomial Naive Bayes classifier from scratch to answer questions about campus topics, with optional Google Gemini API support for general/open-ended questions.
+**Topic:** Automated Campus Helpdesk & Student Academic Assistant  
+**Course:** AIP203 Artificial Intelligence Lab (Lab 10)  
+**Method:** Multinomial Naive Bayes (Laplace Smoothing) with Google Gemini API Fallback
+
+CampusMate is an intelligent campus virtual assistant designed to answer frequent university administrative and academic questions. It uses a from-scratch Naive Bayes classifier for instant offline replies to verified campus information, paired with optional Google Gemini API integration for open-ended queries.
 
 ## Topics Covered
 - Library hours and weekend timings

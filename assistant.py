@@ -1,5 +1,7 @@
 """
-Campus FAQ Assistant - AIP203 Lab 10
+CampusMate - Automated Campus Helpdesk & Student Academic Assistant
+AIP203 Artificial Intelligence Lab (Lab 10)
+
 Single-file assistant combining Naive Bayes, optional Gemini API,
 CLI chat loop, unit tests, and Streamlit web UI.
 
@@ -38,7 +40,7 @@ INTENTS = {
         "examples": [
             "hi", "hello", "hey", "good morning", "good evening", "hi there",
         ],
-        "reply": "Hey! Ask me anything about library hours, fees, exams, campus locations, or advisors.",
+        "reply": "Hey! I'm CampusMate. Ask me anything about library hours, fees, exams, campus locations, or advisors.",
     },
     "goodbye": {
         "examples": [
@@ -239,7 +241,7 @@ def main():
     classifier = IntentClassifier(INTENTS)
     has_gemini = bool(os.environ.get("GEMINI_API_KEY"))
 
-    print("--- Campus Virtual Assistant (type 'quit' to exit) ---")
+    print("--- CampusMate: Campus Virtual Assistant (type 'quit' to exit) ---")
     if has_gemini:
         print("[Gemini API: Enabled]")
     else:
@@ -267,7 +269,9 @@ def run_streamlit():
     """Minimal Streamlit web interface."""
     import streamlit as st
 
-    st.title("Campus Virtual Assistant")
+    st.set_page_config(page_title="CampusMate", page_icon="🎓")
+    st.title("🎓 CampusMate")
+    st.caption("Automated Campus Helpdesk & Student Academic Assistant")
     st.write("Ask me about library hours, fees, exams, campus locations, or general queries.")
 
     with st.sidebar:
